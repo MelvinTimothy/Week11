@@ -1,5 +1,11 @@
 package week11;
 
-public class ExcessiveFailedLoginException {
+public class ExcessiveFailedLoginException extends Exception {
+    public ExcessiveFailedLoginException() {
+        super("Anda telah mencapai jumlah batas login");
+    }
 
+    public ExcessiveFailedLoginException(String msg) {
+        super(msg);
+    }
 }
